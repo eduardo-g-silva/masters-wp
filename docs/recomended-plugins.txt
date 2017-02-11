@@ -1,0 +1,18 @@
+security
+"wpackagist-plugin/captcha":">=3.9",
+
+andim
+"wpackagist-plugin/wordpress-importer": "0.6.1",
+
+seo yeost
+"wpackagist-plugin/wordpress-seo":"*",
+
+social media
+"wpackagist-plugin/subscribe-to-comments": "2.3",
+"wpackagist-plugin/seo-facebook-comments": "1.5.2",
+
+to make add code content using github
+"wpackagist-plugin/gist-github-shortcode": "1.3.0",
+
+video players
+"wpackagist-plugin/vimeography": "1.3.1"
