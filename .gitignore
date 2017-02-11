@@ -7,7 +7,14 @@ web/app/uploads/*
 !web/app/uploads/.gitkeep
 
 # WordPress
+# Ignore everything in the "themes" directory, except the themes you
+# specify (see the commented-out example for a hint on how to do this.)
 web/wp
+web/wp/wp-content/themes/*
+!web/wp/wp-content/themes/oe-brixton/
+web/wp/wp-content/themes/oe-brixton/bower_components/
+web/wp/wp-content/themes/oe-brixton/node_modules/
+
 web/.htaccess
 
 # Dotenv
