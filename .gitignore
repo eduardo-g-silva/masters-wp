@@ -6,7 +6,7 @@ web/app/upgrade
 web/app/uploads/*
 !web/app/uploads/.gitkeep
 
-# Ignore everything in the "themes" directory, except the themes you
+# ignoring the bower and node local componentss
 web/app/themes/oe-brixton/bower_components/
 web/app/themes/oe-brixton/node_modules/
 
