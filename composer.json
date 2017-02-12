@@ -1,27 +1,26 @@
 {
-  "name": "roots/bedrock",
+  "name": "open-ecommerce/masters-wp",
   "type": "project",
   "license": "MIT",
-  "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
-  "homepage": "https://roots.io/bedrock/",
+  "description": "WordPress boilerplate based in bedrock and foundationpress",
+  "homepage": "https://open-ecommerce.org/",
   "authors": [
     {
-      "name": "Scott Walkinshaw",
-      "email": "scott.walkinshaw@gmail.com",
-      "homepage": "https://github.com/swalkinshaw"
+      "name": "Eduardo Silva",
+      "email": "eduardo@open-ecommerce.org",
+      "homepage": "https://github.com/eduardo-g-silva"
     },
     {
-      "name": "Ben Word",
-      "email": "ben@benword.com",
-      "homepage": "https://github.com/retlehs"
-    }
+      "name": "Mariano Marey",
+      "email": "mariano@open-ecommerce.org",
+      "homepage": "https://github.com//mariano-london"
+    },
   ],
   "keywords": [
-    "bedrock", "roots", "wordpress", "stack", "composer", "vagrant", "wp"
+    "bedrock", "foundationpress", "wordpress", "stack", "composer", "vagrant", "wp", "gulp", "npm"
   ],
   "support": {
-    "issues": "https://github.com/roots/bedrock/issues",
-    "forum": "https://discourse.roots.io/category/bedrock"
+    "issues": "https://github.com/open-ecommerce/masters-wp/issues",
   },
   "config": {
     "preferred-install": "dist"
@@ -38,7 +37,17 @@
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.7.2",
     "oscarotero/env": "^1.0",
-    "roots/wp-password-bcrypt": "1.0.0"
+    "roots/wp-password-bcrypt": "1.0.0",
+    "wpackagist-plugin/captcha":"4.1.8",
+    "wpackagist-plugin/wordpress-importer": "0.6.1",
+    "wpackagist-plugin/wordpress-seo":"*",
+    "wpackagist-plugin/vimeography": "1.3.1",
+    "wpackagist-plugin/siteorigin-panels": "dev-trunk",
+    "wpackagist-plugin/so-widgets-bundle": "1.5.11",
+    "wpackagist-plugin/w3-total-cache": "0.9.4.1",
+    "wpackagist-plugin/client-dash": "1.6.8",
+    "wpackagist-plugin/rest-api": "2.0-beta13",
+    "wpackagist-plugin/angularjs-for-wp": "dev-trunk"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
