@@ -45,7 +45,6 @@
     "wpackagist-plugin/siteorigin-panels": "dev-trunk",
     "wpackagist-plugin/so-widgets-bundle": "~1.8",
     "wpackagist-plugin/w3-total-cache": "~0.9",
-    "wpackagist-plugin/client-dash": "~1.6",
     "wpackagist-plugin/rest-api": "~2.0-beta13",
     "wpackagist-plugin/angularjs-for-wp": "dev-trunk"
   },

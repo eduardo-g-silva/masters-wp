@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c8fa03eca1a783b45973fa52a56b74ca",
-    "content-hash": "a4277525c4377d1c253fa3cdefdc7334",
+    "hash": "9b655ce57a5a4335653ad821351a8bda",
+    "content-hash": "54e592fc9c4df308c50dad55cb3d9b8b",
     "packages": [
         {
             "name": "composer/installers",
@@ -352,7 +352,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/angularjs-for-wp.zip",
-                "reference": null,
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -373,7 +373,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/captcha.4.2.8.zip",
-                "reference": null,
+                "reference": "tags/4.2.8",
                 "shasum": null
             },
             "require": {
@@ -381,26 +381,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/captcha/"
-        },
-        {
-            "name": "wpackagist-plugin/client-dash",
-            "version": "1.6.12",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/client-dash/",
-                "reference": "tags/1.6.12"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/client-dash.1.6.12.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/client-dash/"
         },
         {
             "name": "wpackagist-plugin/rest-api",
@@ -413,7 +393,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/rest-api.2.0-beta15.zip",
-                "reference": null,
+                "reference": "tags/2.0-beta15",
                 "shasum": null
             },
             "require": {
@@ -433,7 +413,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/siteorigin-panels.zip",
-                "reference": null,
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -454,7 +434,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/so-widgets-bundle.1.8.1.zip",
-                "reference": null,
+                "reference": "tags/1.8.1",
                 "shasum": null
             },
             "require": {
@@ -474,7 +454,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/vimeography.1.4.1.zip",
-                "reference": null,
+                "reference": "tags/1.4.1",
                 "shasum": null
             },
             "require": {
@@ -494,7 +474,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/w3-total-cache.0.9.5.2.zip",
-                "reference": null,
+                "reference": "tags/0.9.5.2",
                 "shasum": null
             },
             "require": {
@@ -514,7 +494,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wordpress-importer.0.6.3.zip",
-                "reference": null,
+                "reference": "tags/0.6.3",
                 "shasum": null
             },
             "require": {
@@ -534,7 +514,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.2.1.zip",
-                "reference": null,
+                "reference": "tags/4.2.1",
                 "shasum": null
             },
             "require": {

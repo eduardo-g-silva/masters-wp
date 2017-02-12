@@ -1,0 +1,137 @@
+/*!
+Theme Name: MAAT
+Theme URI: https://github.com/asathoor/maat_bower_wp_theme
+Author: Per Thykjaer Jensen
+Author URI: http://multimusen.dk
+Description: A skeleton theme. Features: Bootstrap, Jquery and wp-navwalker menu.
+Version: 1.0
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: two-columns, blog, education, right-sidebar, grid-layout
+Text Domain: maat-or-the-improved-bootstrap
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+// vars
+$left: 15px; // distance
+$respekt: 1.2rem; // respect distance
+$bg: #fff; // background
+
+/**
+ * Fonts
+ * Google fonts are ok via uri
+ * Other fonts should be included in a dir.
+ */
+@import url(https://fonts.googleapis.com/css?family=Courgette);
+
+
+// Rounded corners
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+
+/**
+ * Header
+ */
+header {
+
+	height: 120px;
+	
+	h1 {
+		font-family: 'Courgette', cursive;
+		position: relative;
+		left: $left;
+	}
+
+	h2 {
+		font-family: sans-serif;
+		font-weight: bold;
+		font-size: small;
+		position: relative;
+		left: $left;
+		top: -20px;
+	}
+
+	img {
+		position: relative; 
+		float: left;
+		margin-left: 1.333em;
+		margin-right: 1.333em;
+		top: -13px;
+	}
+}
+
+
+footer {
+	color: #fff;
+	background-color: #000;
+	padding: 2em;
+	font-size: x-small;
+	//@include border-radius(12px);
+}
+
+
+/**
+ * Article
+ */
+article {
+	margin-top: 4rem;
+	margin-bottom: 6rem;
+	background-color: $bg;
+}
+
+
+/**
+ * WP required classes
+ */
+.container {
+	background-color: $bg;
+}
+
+.wp-caption {
+    font-family: sans-serif;
+    }
+
+.wp-caption-text {
+    font-family: sans-serif;
+		font-style: italic;
+    }
+
+.screen-reader-text {
+    font-size: large;
+    }
+
+.gallery-caption {
+     font-style: italic;
+    }
+
+.bypostauthor {
+    font-size: small;
+    }
+
+.alignright {
+    text-align: right;
+}
+
+.alignleft {
+    text-align: left;
+    margin-right: $respekt;
+    margin-bottom: $respekt;
+}
+
+.aligncenter {
+    text-align: center;
+}
+
+.sticky {
+    font-family: sans-serif;
+    font-weight: bold;
+    }
+
+// @link: https://codex.wordpress.org/Content_Width

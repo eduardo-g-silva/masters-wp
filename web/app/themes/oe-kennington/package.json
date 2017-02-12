@@ -1,0 +1,24 @@
+{
+  "name": "maat-or-the-improved-bootstrap",
+  "version": "1.0.0",
+  "description": "WordPress skeleton theme for teaching",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asathoor/maat-or-the-improved-bootstrap.git"
+  },
+  "author": "Per Thykjaer Jensen",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/asathoor/maat-or-the-improved-bootstrap/issues"
+  },
+  "homepage": "https://github.com/asathoor/maat-or-the-improved-bootstrap#readme",
+  "dependencies": {
+    "bower": "^1.8.0",
+    "gulp": "^3.9.1",
+    "sass": "^0.5.0"
+  }
+}

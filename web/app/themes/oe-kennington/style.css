@@ -1,0 +1,95 @@
+/*!
+Theme Name: oe-kennington
+Theme URI: https://github.com/open-ecommerce/masters-wp
+Author: Eduardo Silva based on Thykjaer Jensen
+Description: Implementation of MAAT skeleton starter theme. Features: Bootstrap 4, Jquery and wp-navwalker menu.
+Version: 1.0
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Tags: two-columns, blog, education, right-sidebar, grid-layout
+Text Domain: oe-kennington
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/**
+ * Fonts
+ * Google fonts are ok via uri
+ * Other fonts should be included in a dir.
+ */
+@import url(https://fonts.googleapis.com/css?family=Courgette);
+/**
+ * Header
+ */
+header {
+  height: 120px; }
+  header h1 {
+    font-family: 'Courgette', cursive;
+    position: relative;
+    left: 15px; }
+  header h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: small;
+    position: relative;
+    left: 15px;
+    top: -20px; }
+  header img {
+    position: relative;
+    float: left;
+    margin-left: 1.333em;
+    margin-right: 1.333em;
+    top: -13px; }
+
+footer {
+  color: #fff;
+  background-color: #000;
+  padding: 2em;
+  font-size: x-small; }
+
+/**
+ * Article
+ */
+article {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  background-color: #fff; }
+
+/**
+ * WP required classes
+ */
+.container {
+  background-color: #fff; }
+
+.wp-caption {
+  font-family: sans-serif; }
+
+.wp-caption-text {
+  font-family: sans-serif;
+  font-style: italic; }
+
+.screen-reader-text {
+  font-size: large; }
+
+.gallery-caption {
+  font-style: italic; }
+
+.bypostauthor {
+  font-size: small; }
+
+.alignright {
+  text-align: right; }
+
+.alignleft {
+  text-align: left;
+  margin-right: 1.2rem;
+  margin-bottom: 1.2rem; }
+
+.aligncenter {
+  text-align: center; }
+
+.sticky {
+  font-family: sans-serif;
+  font-weight: bold; }
+
+/*# sourceMappingURL=style.css.map */
