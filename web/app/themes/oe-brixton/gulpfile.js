@@ -10,6 +10,7 @@ var sequence    = require('run-sequence');
 var colors      = require('colors');
 var dateFormat  = require('dateformat');
 var del         = require('del');
+var cleanCSS    = require('gulp-clean-css');
 
 // Enter URL of your local server here
 // Example: 'http://localwebsite.dev'
@@ -19,7 +20,11 @@ var URL = '';
 var isProduction = !!(argv.production);
 
 // Browsers to target when prefixing CSS.
-var COMPATIBILITY = ['last 2 versions', 'ie >= 9'];
+var COMPATIBILITY = [
+  'last 2 versions',
+  'ie >= 9',
+  'Android >= 2.3'
+];
 
 // File paths to various assets are defined here.
 var PATHS = {
@@ -100,9 +105,6 @@ gulp.task('browser-sync', ['build'], function() {
 // Compile Sass into CSS
 // In production, the CSS is compressed
 gulp.task('sass', function() {
-  // Minify CSS if run wtih --production flag
-  var minifycss = $.if(isProduction, $.minifyCss());
-
   return gulp.src('assets/scss/foundation.scss')
     .pipe($.sourcemaps.init())
     .pipe($.sass({
@@ -115,7 +117,8 @@ gulp.task('sass', function() {
     .pipe($.autoprefixer({
       browsers: COMPATIBILITY
     }))
-    .pipe(minifycss)
+    // Minify CSS if run with --production flag
+    .pipe($.if(isProduction, cleanCSS()))
     .pipe($.if(!isProduction, $.sourcemaps.write('.')))
     .pipe(gulp.dest('assets/stylesheets'))
     .pipe(browserSync.stream({match: '**/*.css'}));
@@ -162,21 +165,11 @@ gulp.task('javascript', function() {
 
 // Copy task
 gulp.task('copy', function() {
-  // Motion UI
-  var motionUi = gulp.src('assets/components/motion-ui/**/*.*')
-    .pipe($.flatten())
-    .pipe(gulp.dest('assets/javascript/vendor/motion-ui'));
-
-  // What Input
-  var whatInput = gulp.src('assets/components/what-input/**/*.*')
-      .pipe($.flatten())
-      .pipe(gulp.dest('assets/javascript/vendor/what-input'));
-
   // Font Awesome
   var fontAwesome = gulp.src('assets/components/fontawesome/fonts/**/*.*')
       .pipe(gulp.dest('assets/fonts'));
 
-  return merge(motionUi, whatInput, fontAwesome);
+  return merge(fontAwesome);
 });
 
 // Package task

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "9b655ce57a5a4335653ad821351a8bda",
-    "content-hash": "54e592fc9c4df308c50dad55cb3d9b8b",
+    "hash": "395dd6f4cdc4f87152c2a13f00464f5a",
+    "content-hash": "4b69e1ec15f2a4c96ded109b24a8cfec",
     "packages": [
         {
             "name": "composer/installers",
@@ -352,7 +352,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/angularjs-for-wp.zip",
-                "reference": "trunk",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -361,26 +361,6 @@
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/angularjs-for-wp/",
             "time": "2015-08-27 00:41:16"
-        },
-        {
-            "name": "wpackagist-plugin/captcha",
-            "version": "4.2.8",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/captcha/",
-                "reference": "tags/4.2.8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/captcha.4.2.8.zip",
-                "reference": "tags/4.2.8",
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/captcha/"
         },
         {
             "name": "wpackagist-plugin/rest-api",
@@ -393,7 +373,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/rest-api.2.0-beta15.zip",
-                "reference": "tags/2.0-beta15",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -502,26 +482,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-importer/"
-        },
-        {
-            "name": "wpackagist-plugin/wordpress-seo",
-            "version": "4.2.1",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/4.2.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.4.2.1.zip",
-                "reference": "tags/4.2.1",
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wordpress-seo/"
         }
     ],
     "packages-dev": [

@@ -6,7 +6,7 @@ class theme_customizer
     public function __construct()
     {
         add_action ('admin_menu', array(&$this, 'customizer_admin'));
-        add_action( 'customize_register', array(&$this, 'customize_manager_oebrixton' ));
+        add_action( 'customize_register', array(&$this, 'customize_manager_logos' ));
     }
 
     /**
@@ -22,15 +22,15 @@ class theme_customizer
      * @param  WP_Customizer_Manager $wp_manager
      * @return void
      */
-    public function customize_manager_oebrixton( $wp_manager )
+    public function customize_manager_logos( $wp_manager )
     {
         $this->logos_section( $wp_manager );
     }
 
     public function logos_section( $wp_manager )
     {
-        $wp_manager->add_section( 'customiser_oebrixton_section', array(
-            'title'          => 'OE Brixton Options',
+        $wp_manager->add_section( 'customiser_logos_section', array(
+            'title'          => 'Site Logos',
             'priority'       => 35,
         ) );
 
@@ -41,7 +41,7 @@ class theme_customizer
 
         $wp_manager->add_control( new WP_Customize_Image_Control( $wp_manager, 'logo_big_setting', array(
             'label'   => 'Main logo for Site',
-            'section' => 'customiser_oebrixton_section',
+            'section' => 'customiser_logos_section',
             'settings'   => 'logo_big_setting',
             'priority' => 8
         ) ) );
@@ -53,7 +53,7 @@ class theme_customizer
 
         $wp_manager->add_control( new WP_Customize_Image_Control( $wp_manager, 'logo_small_setting', array(
             'label'   => 'Small logo for Site',
-            'section' => 'customiser_oebrixton_section',
+            'section' => 'customiser_logos_section',
             'settings'   => 'logo_small_setting',
             'priority' => 8
         ) ) );
@@ -65,7 +65,7 @@ class theme_customizer
 
         $wp_manager->add_control( 'mimify_setting', array(
             'label'   => 'Mimify HTML, js and css',
-            'section' => 'customiser_oebrixton_section',
+            'section' => 'customiser_logos_section',
             'type'    => 'checkbox',
             'priority' => 1
         ) );

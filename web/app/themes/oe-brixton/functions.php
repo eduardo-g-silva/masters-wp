@@ -44,11 +44,17 @@ require_once( 'library/custom-nav.php' );
 /** Change WP's sticky post class */
 require_once( 'library/sticky-posts.php' );
 
+/** Configure responsive image sizes */
+require_once( 'library/responsive-images.php' );
+
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/protocol-relative-theme-assets.php' );
 
 /** general oe functions */
-require_once( 'library/oe-brixton.php' );
+require_once( 'library/oe-ben.php' );
 
 /** to customize the theme with different */
 require_once( 'library/theme_customizer.php' );
+
+/** to customize the page builder */
+require_once( 'library/site-origin-extension.php' );

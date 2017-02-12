@@ -2,8 +2,17 @@
 /*
 Template Name: Front
 */
-
 get_header(); ?>
+
+<header id="front-hero" role="banner">
+	<div class="marketing">
+		<div class="tagline">
+			<h1><?php bloginfo( 'name' ); ?></h1>
+			<h4 class="subheader"><?php bloginfo( 'description' ); ?></h4>
+		</div>
+	</div>
+
+</header>
 
 <?php do_action( 'foundationpress_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
@@ -29,6 +38,10 @@ get_header(); ?>
 </section>
 <?php endwhile;?>
 <?php do_action( 'foundationpress_after_content' ); ?>
+
+
+
+
 
 
 
