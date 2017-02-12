@@ -14,13 +14,13 @@
       "name": "Mariano Marey",
       "email": "mariano@open-ecommerce.org",
       "homepage": "https://github.com//mariano-london"
-    },
+    }
   ],
   "keywords": [
     "bedrock", "foundationpress", "wordpress", "stack", "composer", "vagrant", "wp", "gulp", "npm"
   ],
   "support": {
-    "issues": "https://github.com/open-ecommerce/masters-wp/issues",
+    "issues": "https://github.com/open-ecommerce/masters-wp/issues"
   },
   "config": {
     "preferred-install": "dist"
