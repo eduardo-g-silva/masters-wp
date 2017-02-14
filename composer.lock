@@ -393,7 +393,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/siteorigin-panels.zip",
-                "reference": "trunk",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -414,7 +414,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/so-widgets-bundle.1.8.1.zip",
-                "reference": "tags/1.8.1",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -434,7 +434,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/vimeography.1.4.1.zip",
-                "reference": "tags/1.4.1",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -454,7 +454,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/w3-total-cache.0.9.5.2.zip",
-                "reference": "tags/0.9.5.2",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -474,7 +474,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wordpress-importer.0.6.3.zip",
-                "reference": "tags/0.6.3",
+                "reference": null,
                 "shasum": null
             },
             "require": {
