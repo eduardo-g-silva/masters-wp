@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "395dd6f4cdc4f87152c2a13f00464f5a",
-    "content-hash": "4b69e1ec15f2a4c96ded109b24a8cfec",
+    "hash": "5b12c90e95ce71136258aaafeea9c9b2",
+    "content-hash": "9b2964dc54f1b8f8ad2652a249b161c6",
     "packages": [
         {
             "name": "composer/installers",
@@ -342,16 +342,16 @@
             "time": "2016-09-01 10:05:43"
         },
         {
-            "name": "wpackagist-plugin/angularjs-for-wp",
-            "version": "dev-trunk",
+            "name": "wpackagist-plugin/contact-form-7",
+            "version": "4.6.1",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/angularjs-for-wp/",
-                "reference": "trunk"
+                "url": "https://plugins.svn.wordpress.org/contact-form-7/",
+                "reference": "tags/4.6.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/angularjs-for-wp.zip",
+                "url": "https://downloads.wordpress.org/plugin/contact-form-7.4.6.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -359,20 +359,19 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/angularjs-for-wp/",
-            "time": "2015-08-27 00:41:16"
+            "homepage": "https://wordpress.org/plugins/contact-form-7/"
         },
         {
-            "name": "wpackagist-plugin/rest-api",
-            "version": "2.0-beta15",
+            "name": "wpackagist-plugin/flamingo",
+            "version": "1.5",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/rest-api/",
-                "reference": "tags/2.0-beta15"
+                "url": "https://plugins.svn.wordpress.org/flamingo/",
+                "reference": "tags/1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/rest-api.2.0-beta15.zip",
+                "url": "https://downloads.wordpress.org/plugin/flamingo.1.5.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -380,7 +379,27 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/rest-api/"
+            "homepage": "https://wordpress.org/plugins/flamingo/"
+        },
+        {
+            "name": "wpackagist-plugin/one-click-demo-import",
+            "version": "2.2.0",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/one-click-demo-import/",
+                "reference": "tags/2.2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/one-click-demo-import.2.2.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/one-click-demo-import/"
         },
         {
             "name": "wpackagist-plugin/siteorigin-panels",
@@ -393,7 +412,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/siteorigin-panels.zip",
-                "reference": null,
+                "reference": "trunk",
                 "shasum": null
             },
             "require": {
@@ -414,7 +433,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/so-widgets-bundle.1.8.1.zip",
-                "reference": null,
+                "reference": "tags/1.8.1",
                 "shasum": null
             },
             "require": {
@@ -434,7 +453,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/vimeography.1.4.1.zip",
-                "reference": null,
+                "reference": "tags/1.4.1",
                 "shasum": null
             },
             "require": {
@@ -454,7 +473,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/w3-total-cache.0.9.5.2.zip",
-                "reference": null,
+                "reference": "tags/0.9.5.2",
                 "shasum": null
             },
             "require": {
@@ -474,7 +493,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wordpress-importer.0.6.3.zip",
-                "reference": null,
+                "reference": "tags/0.6.3",
                 "shasum": null
             },
             "require": {
@@ -567,9 +586,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "wpackagist-plugin/siteorigin-panels": 20,
-        "wpackagist-plugin/rest-api": 10,
-        "wpackagist-plugin/angularjs-for-wp": 20
+        "wpackagist-plugin/siteorigin-panels": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
