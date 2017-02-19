@@ -72,14 +72,16 @@ Now you should point your url to the web folder of the new project.
 
 #If you are using Apache
 You can create a new file call 'example_dev.conf' in your /etc/apache2/sites-available folder with something like this:
-  `<VirtualHost *:80>
+`
+  <VirtualHost *:80>
       ServerAdmin whatevername@whatever.org
       ServerName example.dev
       ServerAlias www.example.dev
       DocumentRoot /var/www/example/web
       ErrorLog ${APACHE_LOG_DIR}/example_error.log
       CustomLog ${APACHE_LOG_DIR}/example_access.log combined
-  </VirtualHost>`
+  </VirtualHost>
+`
 
 Then of course:
 Add the url to your host file: `/etc/hosts`
@@ -123,7 +125,8 @@ And reload apache
     location ~* /\. {
         deny all;
     }
-}`
+}
+`
 
 | Header One     | Header Two     |
 | :------------- | :------------- |
