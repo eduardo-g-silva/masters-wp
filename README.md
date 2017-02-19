@@ -70,7 +70,7 @@ https://github.com/open-ecommerce/masters-wp/blob/master/docs/working-on-it.md
 ## Setup your webserver
 Now you should point your url to the web folder of the new project.
 
-#If you are using Apache
+###If you are using Apache
 You can create a new file call 'example_dev.conf' in your /etc/apache2/sites-available folder with something like this:
 ```
   <VirtualHost *:80>
@@ -93,7 +93,8 @@ Make apache recognize the config file:
 And reload apache
 `sudo service apache2 reload`
 
-#If you are using Ngnx you can create a new configuration file at `/etc/nginx/` can be something like that:
+###If you are using Ngnx
+you can create a new configuration file at `/etc/nginx/` can be something like that:
 
 ```
 server {
