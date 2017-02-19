@@ -5,8 +5,6 @@ This is the repository integrating some other repos about adding composer to wp 
 Later on you can select the wp plugins you want to have changing the composer.json file but this are the plugins we are using:
 
 
-
-
 ##You can see a demo at:
 http://wp-brixton.oe-lab.tk/
 
@@ -61,82 +59,16 @@ https://github.com/open-ecommerce/masters-wp/blob/master/docs/working-on-it.md
 
   Or, you can cut and paste from the [Roots WordPress Salt Generator][roots-wp-salt].
 
-3. Add theme(s) in `web/app/themes` as you would for a normal WordPress site.
+3. Create local DB with your tool of preference I like wp-cli so I will just run the wp command that will use what ever db credentials we put in the .env file
+`wp db create`
 
-4. Set your site vhost document root to `/path/to/site/web/` (`/path/to/site/current/web/` if using deploys)
+4. Add theme(s) in `web/app/themes` as you would for a normal WordPress site.
 
-5. Access WP admin at `http://example.com/wp/wp-admin`
+5. Set your site vhost document root to `/path/to/example/web/` (`/path/to/example/current/web/` if using deploys)
 
-## Setup your webserver
-Now you should point your url to the web folder of the new project.
+* [more info about webserver config](https://github.com/open-ecommerce/masters-wp/blob/master/docs/how-to-host.md)
 
-###If you are using Apache
-You can create a new file call 'example_dev.conf' in your /etc/apache2/sites-available folder with something like this:
-```
-  <VirtualHost *:80>
-      ServerAdmin whatevername@whatever.org
-      ServerName example.dev
-      ServerAlias www.example.dev
-      DocumentRoot /var/www/example/web
-      ErrorLog ${APACHE_LOG_DIR}/example_error.log
-      CustomLog ${APACHE_LOG_DIR}/example_access.log combined
-  </VirtualHost>
-```
-
-Then of course:
-Add the url to your host file: `/etc/hosts`
-`127.0.1.1       example.dev`
-
-Make apache recognize the config file:
-`sudo a2ensite example_dev.conf`
-
-And reload apache
-`sudo service apache2 reload`
-
-###If you are using Ngnx
-you can create a new configuration file at `/etc/nginx/` can be something like that:
-
-```
-server {
-    charset utf-8;
-    client_max_body_size 128M;
-
-    listen 80; ## listen for ipv4
-    #listen [::]:80 default_server ipv6only=on; ## listen for ipv6
-
-    server_name example.dev;
-    root        /var/www/example/web;
-    index       index.php;
-
-    access_log  /path/to/basic/log/example_access.log;
-    error_log   /path/to/basic/log/example_error.log;
-
-    location / {
-        # Redirect everything that isn't a real file to index.php
-        try_files $uri $uri/ /index.php$is_args$args;
-    }
-
-    location ~ \.php$ {
-        include fastcgi_params;
-        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
-        fastcgi_pass 127.0.0.1:9000;
-        #fastcgi_pass unix:/var/run/php5-fpm.sock;
-        try_files $uri =404;
-    }
-
-    location ~* /\. {
-        deny all;
-    }
-}
-```
-
-Then restart nginx
-`service nginx reload`
-
----
-
-Then remember to add the url to your host file: `/etc/hosts`
-`127.0.1.1       example.dev`
+6. Access WP admin at `http://example.com/wp/wp-admin`
 
 
 ## Deploys
