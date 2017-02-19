@@ -66,7 +66,7 @@ https://github.com/open-ecommerce/masters-wp/blob/master/docs/working-on-it.md
 
 5. Set your site vhost document root to `/path/to/example/web/` (`/path/to/example/current/web/` if using deploys)
 
-* [more info about webserver config](https://github.com/open-ecommerce/masters-wp/blob/master/docs/how-to-host.md)
+* [more info about webserver config](https://github.com/open-ecommerce/masters-wp/blob/master/docs/how-to-vhosts.md)
 
 6. Access WP admin at `http://example.com/wp/wp-admin`
 
