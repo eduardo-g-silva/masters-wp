@@ -7,7 +7,7 @@
  * @since 1.0
  * @version 1.0
  *
- * It's a bit bloated. 
+ * It's a bit bloated.
  * Cut to pieces?
  */
 ?>
@@ -15,11 +15,11 @@
 <!-- begin main loop -->
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-<article id="article-<?php the_ID(); ?>" 
+<article id="article-<?php the_ID(); ?>"
   <?php if(is_category('featured')): ?>class="featured-post"
 
   <?php endif; ?>>
-  <a href="<?php the_permalink(); ?>" 
+  <a href="<?php the_permalink(); ?>"
     title="<?php the_title_attribute(); ?>">
   	  <h3><?php the_title() ;?></h3>
   </a>
@@ -31,14 +31,14 @@
     <?php echo get_avatar($id); ?>
   </figure>
 	<p>
-		Published on <?php the_time('M j, Y'); ?> 
+		Published on <?php the_time('M j, Y'); ?>
 		by <?php the_category(', '); ?>
 		in <?php the_category(', '); ?>
 	</p>
   <div class="navLinks">
     <?php posts_nav_link(); ?>
   </div>
- 
+
   <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	  <?php the_content(); ?>
   </div>
@@ -64,7 +64,7 @@
 		</ul>
 
 	</div>
-  
+
 </aside><!-- .theCommentsHere -->
 
 </article>

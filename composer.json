@@ -42,7 +42,13 @@
     "wpackagist-plugin/siteorigin-panels": "dev-trunk",
     "wpackagist-plugin/so-widgets-bundle": "~1.8",
     "wpackagist-plugin/w3-total-cache": "~0.9",
+<<<<<<< HEAD
     "wpackagist-plugin/contact-form-7": "4.7"
+=======
+    "wpackagist-plugin/one-click-demo-import": "2.2.0",
+    "wpackagist-plugin/contact-form-7": "4.6.1",
+    "wpackagist-plugin/flamingo": "1.5"
+>>>>>>> f70a35812847f9d27d7c5593450bb18a25eb444a
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
