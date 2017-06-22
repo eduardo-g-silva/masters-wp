@@ -35,6 +35,31 @@ https://github.com/asathoor/maat-or-the-improved-bootstrap
 https://github.com/open-ecommerce/masters-wp/blob/master/docs/working-on-it.md
 
 
+## Prerequisites
+You will need WP-CLI installed in your box with a lamp (mysql, apache, php etc)
+
+Installing cli in your system:
+```
+curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+```
+other options
+```
+php -r "readfile('https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar');" > wp-cli.phar
+```
+
+If you can't run curl in your shared server just download wp-cli.phar and upload the file using ftp
+
+Then, you need to make the file executable:
+```
+chmod +x wp-cli.phar
+```
+
+The final step is to move the file to a folder, so that you can execute it from anywhere. Renaming the file to something easy to remember and type is also a good idea; this is the reason why wp is the most commonly used name:
+```
+sudo mv wp-cli.phar /usr/local/bin/wp
+wp --info
+```
+
 #How to install and eventualy deploy :)
 
 ## Installation
@@ -61,11 +86,25 @@ https://github.com/open-ecommerce/masters-wp/blob/master/docs/working-on-it.md
 
   Or, you can cut and paste from the [Roots WordPress Salt Generator][roots-wp-salt].
 
-3. Add theme(s) in `web/app/themes` as you would for a normal WordPress site.
+3. Create the db based in the just created .env (only if you haven't created the db manualy)
+  ```
+  wp db create
+  ```
 
-4. Set your site vhost document root to `/path/to/site/web/` (`/path/to/site/current/web/` if using deploys)
+4. install and configure wp
+  - change 'myurl.dev' with the url you want to use localy.
+  - title is just the title inside the wp config
+  - change the wp admin credentials
+  - check more options at WP-CLI documentation: http://wp-cli.org/commands/core/install/
+  ```
+  wp core install --url=myurl.dev  --title="Your fantastic wp site" --admin_user=oeadmin --admin_password=Password123 --admin_email="info@open-ecommerce.org"
+  ```
 
-5. Access WP admin at `http://example.com/wp/wp-admin`
+5. Add theme(s) in `web/app/themes` as you would for a normal WordPress site.
+
+6. Set your site vhost document root to `/path/to/site/web/` (`/path/to/site/current/web/` if using deploys)
+
+7. Access WP admin at `http://example.com/wp/wp-admin`
 
 ## Deploys
 
@@ -218,48 +257,6 @@ The general idea is to create a basic skeleton files for further theme developme
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Prerequisites
-You will need WP-CLI installed in your box with a lamp (mysql, apache, php etc)
-
-Installing cli in your system:
-```
-curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
-```
-other options
-```
-php -r "readfile('https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar');" > wp-cli.phar
-```
-
-If you can't run curl in your shared server just download wp-cli.phar and upload the file using ftp
-
-Then, you need to make the file executable:
-```
-chmod +x wp-cli.phar
-```
-
-The final step is to move the file to a folder, so that you can execute it from anywhere. Renaming the file to something easy to remember and type is also a good idea; this is the reason why wp is the most commonly used name:
-```
-sudo mv wp-cli.phar /usr/local/bin/wp
-wp --info
-```
-
 ## Instructions to make the wordpress work in your dev box
 ### clone the master branch of this repo
 ```
@@ -295,8 +292,7 @@ wp db create
 - change the wp admin credentials
 - check more options at WP-CLI documentation: http://wp-cli.org/commands/core/install/
 ```
-wp core install --url=myurl.dev  --title="Open-ecommerce wp master" --admin_user=oeadmin --admin_password=Password123
---admin_email="info@open-ecommerce.org"
+wp core install --url=myurl.dev  --title="Open-ecommerce wp master" --admin_user=oeadmin --admin_password=Password123 --admin_email="info@open-ecommerce.org"
 ```
 
 ### install the plugins via composer
